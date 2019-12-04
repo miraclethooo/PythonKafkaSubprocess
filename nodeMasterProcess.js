@@ -46,4 +46,4 @@ function childReadTopic(child, topicName) {
 }
 
 const child = createPythonChild();
-childReadTopic(child, 'yabadabadoo---welcome_members_of_yabadabadoo---2019-11-26');      
+childReadTopic(child, 'topicName');      
