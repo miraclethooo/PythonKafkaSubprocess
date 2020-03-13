@@ -2,9 +2,9 @@
 
 <100-line KafkaConsumer written in python, designed as a Node.js child_process.spawn() multi-threadable script.
 
-This reads topics from the beginning, and gets the High Watermark to ensure completion of reads.
+The existing node.js Kafka bindings were not working... So I wrote a port to the Python Kafka consumer, which works much better and is multi-threadable. Node.js can read consumes using stdio.
 
-Note that a delimiter is used to notify Node.js of breaks between messages, since the Buffer stream that comes out on the Node.js side are concatenated together.
+This is configured to read topics from the beginning, and gets the High Watermark to ensure completion of reads.
 
 # Run the script
 
